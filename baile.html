@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="eS">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Desafío Bootstrap</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body id="baile">
+        <div class="logo">
+            <img src="imagen/logo.png" alt="Logo" style="float: left; width: 70px; height: 70px;"/>
+            <h3 id="titulo">Escuela de Baile Alegría</h3>
+            <br>
+            <br>
+        </div>
+        <nav role="navigation" class="navbar navbar-pills">
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-default navbar-nav">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                    <li class="active"><a href="baile.html"><span class="glyphicon glyphicon-list-alt"></span> Tipos de Baile</a></li>
+                    <li><a href="sede.html"><span class="glyphicon glyphicon-map-marker"></span> Sucursales</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a><input type="text" placeholder="Buscar.." ></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="despegable">
+            <p id="presentar">Conoce nuestros tipos de baile.</p>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tipos de Baile
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" id="Salsa" href="#Salsa">Salsa</a></li>
+                <li role="presentation"><a role="menuitem" id="Tango" href="#Tango">Tango</a></li>
+                <li role="presentation"><a role="menuitem" id="Ballet"  href="#Ballet">Ballet</a></li>
+                <li role="presentation"><a role="menuitem" id="Cueca" href="#Cueca">Cueca</a></li>
+                <li role="presentation"><a role="menuitem" id="Vals" href="#Vals">Vals</a></li>
+                </ul>
+            </div>
+            <br>  
+            <div id="info">
+
+            </div>             
+        </div>
+        <div id = "formulario">
+            <form>
+                <p>Inscríbete con nosotros...</p>
+                <div class="form-group">
+                    <label for="inputName">Nombre:</label>
+                    <input id="nombre" type="text" class="form-control" placeholder="Nombres ">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email:</label>
+                    <input id="email" type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputBaile">Tipo de Baile: </label>
+                    <select id="opcionb" class="form-control">
+                            <option value="1">Aún no decido.</option>
+                            <option value="salsa">Salsa.</option>
+                            <option value="tango">Tango.</option>
+                            <option value="ballet">Ballet.</option>
+                            <option value="cueca">Cueca.</option>
+                            <option value="vals">Vals.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputSucursal">Elige tu sucursal:</label>
+                    <select id="opcions" class="form-control">
+                        <option value="1">Seleccione...</option>
+                        <option value="santiago">Santiago.</option>
+                        <option value="temuco">Temuco.</option>
+                        <option value="losAngeles">Los Ángeles.</option>
+                        <option value="valdivia">Valdivia</option>
+                        <option value="viñaMar">Viña del Mar.</option>
+                        <option value="concepcion">Concepción.</option>
+                    </select>
+                </div>
+                <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="codigo.js"></script>
+    </body>
+</html>
